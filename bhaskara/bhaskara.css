@@ -1,0 +1,41 @@
+body {
+    font-family: 'exo';
+    background-color: #1f1b1b;
+    color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+    border: solid .4rem #FFFFFF;
+    padding: .5rem;
+}
+
+#formulas {
+    border: solid .3rem #FFFFFF;
+    width: 15rem;
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+#a, #b, #c {
+    font-family: 'exo';
+    color: #1f1b1b;
+    width: 15rem;
+    height: 2.1rem;
+}
+
+#btn__calcular {
+    font-family: 'exo';
+    width: 9rem;
+    height: 2.4rem;
+    border: solid .2rem #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 1.5rem;
+}

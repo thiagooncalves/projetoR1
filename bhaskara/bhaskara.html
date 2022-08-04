@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <link rel="stylesheet" href="bhaskara.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <h1>Calcule a equação de segundo grau e ache o x' e x'' da função (Fórmula de Bhaskara).</h1>
+    
+    <h3>Fórmulas usadas para o cálculo</h3>
+    <div id="formulas">
+        △ = b² - (4 x a x c)<br>
+        X = (-b + √△) / 2 x a<br>
+        X = (-b - √△) / 2 x a
+    </div>
+
+    Valor do a: <input id="a" type="number" placeholder="a"> <br>
+    Valor do b: <input id="b" type="number" placeholder="b"> <br>
+    Valor do c: <input id="c" type="number" placeholder="c"> <button id="btn__calcular" onclick="calcular()">Calcular</button>
+    <div id='resultado'></div>
+</body>
+<script src="bhaskara.js"></script>
+</html>
