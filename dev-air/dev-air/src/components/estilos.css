@@ -1,0 +1,16 @@
+body {
+    background-color: #352f2f;
+    color: #FFFFFF; 
+}
+
+.btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 .2rem 0 .2rem;
+    border-radius: 5rem;
+}
+
+.container__principal {
+    margin: 0 0 1rem 1rem;
+}
