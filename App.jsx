@@ -64,7 +64,7 @@ const App = () => {
         <button className='btn' onClick={lessSuitcase23}>-</button>
         <br />
         <br />
-        <button className='btn' onClick={somaPreco}>R$ {preco}</button>
+        Clique e veja o preço total das bagagens <button className='btn' onClick={somaPreco}>R$ {preco}</button>
       </div>
     </>
     )
