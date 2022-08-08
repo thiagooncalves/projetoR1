@@ -49,7 +49,7 @@ const App = () => {
         Olá Dev, qual será o seu próximo destino? As suas opções serão de acordo com a sua elegibilidade.
         <br />
         <br />
-        <button className='btn' onClick={chooseOption}>Opções</button>
+        Clique e veja as suas opções <button className='btn' onClick={chooseOption}>Opções</button>
         <p>{opcoes}</p>
       </div>
 
