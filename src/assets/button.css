@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(41, 37, 37);
+}
+
+.btn {
+    background-color: blueviolet;
+    border: solid .2rem #fff;
+    color: #fff;
+}
+
+.App {
+    color: #fff;
+}
+
+.Cont {
+    color: #fff;
+}
+
+.btn__cont {
+    background-color: blueviolet;
+    border: solid .2rem #fff;
+    color: #fff;
+}
