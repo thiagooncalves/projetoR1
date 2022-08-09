@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Bagagem } from '../src/components/Bagagem.jsx';
 import '../src/components/estilos.css'
@@ -17,12 +17,15 @@ const App = () => {
   const [quantidade10, setQuantidade10] = useState(0);
   const [quantidade23, setQuantidade23] = useState(0);
   const [preco, setPreco] = useState(0);
-
+  
   const addSuitcase10 = () => {
     setQuantidade10(quantidade10 + 1)
   };
 
   const lessSuitcase10 = () => {
+    if(quantidade10 == 0) {
+      return
+    }
     setQuantidade10(quantidade10 - 1)
   };
 
@@ -31,12 +34,17 @@ const App = () => {
   };
 
   const lessSuitcase23 = () => {
+    if(quantidade23 == 0) {
+      return
+    }
     setQuantidade23(quantidade23 - 1)
   };
 
-  const somaPreco = () => {
-    setPreco((100 * quantidade10) + (230 * quantidade23))
-  };
+  // const somaPreco = () => {
+  //   setPreco((100 * quantidade10) + (230 * quantidade23))
+  // };
+
+  useEffect (() => {setPreco((100 * quantidade10) + (230 * quantidade23))} , [quantidade10 , quantidade23])
 
    return (
      <>
@@ -64,7 +72,7 @@ const App = () => {
         <button className='btn' onClick={lessSuitcase23}>-</button>
         <br />
         <br />
-        Clique e veja o preço total das bagagens <button className='btn' onClick={somaPreco}>R$ {preco}</button>
+        Preço total das bagagens <button className='btn'>R$ {preco}</button>
       </div>
     </>
     )
