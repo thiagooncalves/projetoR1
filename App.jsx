@@ -40,10 +40,6 @@ const App = () => {
     setQuantidade23(quantidade23 - 1)
   };
 
-  // const somaPreco = () => {
-  //   setPreco((100 * quantidade10) + (230 * quantidade23))
-  // };
-
   useEffect (() => {setPreco((100 * quantidade10) + (230 * quantidade23))} , [quantidade10 , quantidade23])
 
    return (
